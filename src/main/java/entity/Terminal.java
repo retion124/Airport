@@ -1,5 +1,8 @@
 package entity;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Terminal {
     private String Gates;
     private String Name;

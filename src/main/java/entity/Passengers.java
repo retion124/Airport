@@ -1,5 +1,8 @@
 package entity;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Passengers {
     private String Name;
     private String Passport;

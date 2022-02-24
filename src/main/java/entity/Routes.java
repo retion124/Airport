@@ -1,5 +1,8 @@
 package entity;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Routes {
     private String Departures;
     private String Arrival;
