@@ -1,14 +1,25 @@
 package entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Passengers {
+    @Id
+    private int Id;
     private String Name;
     private String Passport;
     private int Age;
     private int Phone;
     private int Tiskit;
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
+    }
 
     public int getPhone() {
         return Phone;

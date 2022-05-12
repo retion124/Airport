@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 
 @Entity
 public class Workers {
+
     private String Name;
     private String Position;
     private double Salary;
