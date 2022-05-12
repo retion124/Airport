@@ -1,9 +1,12 @@
 package entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Terminal {
+    @Id
+    private int TerminalId;
     private String Gates;
     private String Name;
     private String Workers;

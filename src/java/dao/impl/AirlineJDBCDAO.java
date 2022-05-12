@@ -25,7 +25,7 @@ public class AirlineJDBCDAO implements AirlineDAO {
             PreparedStatement statement;
             if (airlineId == -1) {
                 statement = ((java.sql.Connection) connection).prepareStatement("INSERT INTO airlineId(airlineId) VALUES (?)");
-                statement.setString(1, airline.getAirlineId());
+                statement.setInt(1, airline.getAirlineId());
                 statement.execute();
                 statement = ((java.sql.Connection) connection).prepareStatement("SELECT MAX(id) FROM airlineId");
                 ResultSet rs = statement.executeQuery();

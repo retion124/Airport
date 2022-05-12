@@ -1,9 +1,12 @@
 package entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Routes {
+    @Id
+    private int RoutesId;
     private String Departures;
     private String Arrival;
     private String Time;
