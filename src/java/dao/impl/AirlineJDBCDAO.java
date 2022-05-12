@@ -21,19 +21,19 @@ public class AirlineJDBCDAO implements AirlineDAO {
         Connection connection = null;
         connection = (Connection) this.getConnection();
         try {
-            int airlineId = this.getAirlineId(airline.getName(), (java.sql.Connection) connection);
+            int AirlineId = this.getAirlineId(airline.getName(), (java.sql.Connection) connection);
             PreparedStatement statement;
-            if (airlineId == -1) {
+            if (AirlineId == -1) {
                 statement = ((java.sql.Connection) connection).prepareStatement("INSERT INTO airlineId(airlineId) VALUES (?)");
-                statement.setString(1, airline.getAirlineId());
+                statement.setInt(1, airline.getAirlineId());
                 statement.execute();
                 statement = ((java.sql.Connection) connection).prepareStatement("SELECT MAX(id) FROM airlineId");
                 ResultSet rs = statement.executeQuery();
                 rs.next();
-                airlineId = rs.getInt(1);
+                AirlineId = rs.getInt(1);
             }
             statement = ((java.sql.Connection) connection).prepareStatement( "INSERT INTO airline(AirlineId, Name, Airplane, Rating) VALUES (?, ?, ?, ?)");
-            statement.setInt(1, airlineId);
+            statement.setInt(1, AirlineId);
             statement.setString(2, airline.getName());
             statement.setString(3, airline.getAirplane());
             statement.setLong(4, airline.getRating());
@@ -85,6 +85,11 @@ public class AirlineJDBCDAO implements AirlineDAO {
         }
 
         return allAirline;
+    }
+
+    @Override
+    public void remove(int AirlineId) {
+
     }
 
     private java.sql.Connection getConnection() {

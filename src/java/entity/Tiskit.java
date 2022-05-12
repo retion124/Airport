@@ -1,9 +1,11 @@
 package entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Tiskit {
+    @javax.persistence.Id
     private int Id;
     private int Place;
     private String Flight;

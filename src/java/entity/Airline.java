@@ -14,9 +14,9 @@ public class Airline {
 
     }
 
-    public void setAirlineId(int airlineid) {AirlineId = airlineid;}
+    public void setAirlineId(int airlineId) {AirlineId = airlineId;}
 
-    public String getAirlineId() {return AirlineId;}
+    public int getAirlineId() { return AirlineId; }
 
     public long getRating() {
         return Rating;

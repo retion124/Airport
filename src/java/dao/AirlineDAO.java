@@ -10,5 +10,7 @@ public interface AirlineDAO {
 
     List<Airline> getAll();
 
+    void remove(int AirlineId);
+
 
 }

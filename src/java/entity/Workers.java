@@ -1,10 +1,13 @@
 package entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Workers {
 
+    @Id
+    private int WorkersId;
     private String Name;
     private String Position;
     private double Salary;

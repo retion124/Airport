@@ -13,53 +13,31 @@ public class Passengers {
     private int Phone;
     private int Tiskit;
 
-    public int getId() {
-        return Id;
-    }
+    public int getId() {return Id;}
 
     public void setId(int id) {
         Id = id;
     }
 
-    public int getPhone() {
-        return Phone;
-    }
+    public int getPhone() {return Phone;}
 
-    public void setPhone(int phone) {
-        Phone = phone;
-    }
+    public void setPhone(int phone) {Phone = phone;}
 
-    public int getAge() {
-        return Age;
-    }
+    public int getAge() {return Age;}
 
-    public void setAge(int age) {
-        Age = age;
-    }
+    public void setAge(int age) {Age = age;}
 
-    public String getPassport() {
-        return Passport;
-    }
+    public String getPassport() {return Passport;}
 
-    public void setPassport(String passport) {
-        Passport = passport;
-    }
+    public void setPassport(String passport) {Passport = passport;}
 
-    public int getTiskit() {
-        return Tiskit;
-    }
+    public int getTiskit() {return Tiskit;}
 
-    public void setTiskit(int tiskit) {
-        Tiskit = tiskit;
-    }
+    public void setTiskit(int tiskit) {Tiskit = tiskit;}
 
-    public String getName() {
-        return Name;
-    }
+    public String getName() {return Name;}
 
-    public void setName(String name) {
-        Name = name;
-    }
+    public void setName(String name) {Name = name;}
 }
 
 
