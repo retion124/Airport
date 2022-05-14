@@ -5,18 +5,19 @@ import javax.persistence.Id;
 
 @Entity
 public class Passengers {
+
     @Id
-    private int Id;
-    private String Name;
+    private int PassengersId;
+    private String PassengersName;
     private String Passport;
     private int Age;
     private int Phone;
     private int Tiskit;
 
-    public int getId() {return Id;}
+    public int getPassengersId() {return PassengersId;}
 
-    public void setId(int id) {
-        Id = id;
+    public void setPassengersId(int passengersId) {
+        PassengersId = passengersId;
     }
 
     public int getPhone() {return Phone;}
@@ -35,9 +36,9 @@ public class Passengers {
 
     public void setTiskit(int tiskit) {Tiskit = tiskit;}
 
-    public String getName() {return Name;}
+    public String getPassengersName() {return PassengersName;}
 
-    public void setName(String name) {Name = name;}
+    public void setPassengersName(String passengersName) {PassengersName = passengersName;}
 }
 
 
