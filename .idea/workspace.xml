@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="340a3ab0-47d4-4f77-9236-f49426106e35" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/java/dao/AirplaneDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/dao/impl/AirplaneJDBCDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/dao/FlightDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/dao/PassengersDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/dao/impl/FlightJDBCDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/dao/impl/PassengersJDBCDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/dao/AirlineDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/dao/AirlineDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/dao/impl/AirlineJDBCDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/dao/impl/AirlineJDBCDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/dao/IDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/dao/IDAOFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/dao/impl/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/dao/impl/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/entity/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/entity/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/entity/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/entity/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/entity/Passengers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/entity/Passengers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +80,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="shared-indexes" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -210,7 +212,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652365853970</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Initial commit">
+      <created>1652518077392</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652518077392</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Initial commit">
+      <created>1652518114040</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652518114040</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +240,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/tyt" />
+                        <option value="tyt" />
                       </list>
                     </value>
                   </entry>

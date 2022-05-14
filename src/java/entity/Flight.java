@@ -7,11 +7,21 @@ import javax.persistence.Id;
 public class Flight {
     @Id
     private int FlightId ;
+    private String FlightName;
     private String Routes;
-    private String Time;
+    private int Time;
     private String Airline;
     private Boolean Status;
     private int PassengersOk;
+
+
+    public int getFlightId(){return FlightId; }
+
+    public void setFlightId(int flightId){FlightId = flightId;}
+
+    public String getFlightName(){return FlightName;}
+
+    public void setFlightName(String flightName){FlightName = flightName;}
 
     public String getRoutes() {
         return Routes;
@@ -21,11 +31,11 @@ public class Flight {
         Routes = routes;
     }
 
-    public String getTime() {
+    public int getTime() {
         return Time;
     }
 
-    public void setTime(String time) {
+    public void setTime(int  time) {
         Time = time;
     }
 

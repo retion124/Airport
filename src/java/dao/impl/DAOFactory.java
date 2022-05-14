@@ -1,8 +1,6 @@
 package dao.impl;
 
-import dao.AirlineDAO;
-import dao.AirplaneDAO;
-import dao.IDAOFactory;
+import dao.*;
 
 public class DAOFactory implements IDAOFactory {
 
@@ -33,6 +31,12 @@ public class DAOFactory implements IDAOFactory {
     public AirplaneDAO getAirplaneDAO() {
         return null;
     }
+
+    @Override
+    public FlightDAO getFlightDAO() { return null; }
+
+    @Override
+    public PassengersDAO getPassengersDAO() {return null;}
 }
 
 
